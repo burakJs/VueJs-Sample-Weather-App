@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Json</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+</head>
+<body>
+	<div id="app">
+		<div id="ana">
+			<input type="text" v-model="where" name="">
+			<button @click="getWeather()">Get Weather</button>
+	  	<h1 >{{where}}</h1><br>
+	  	<h2 >Hissedilen Sıcaklık: {{current.feelslike_c}}</h2><br>
+	  	<h2>Sıcaklık: {{current.temp_c}}</h2><br>
+	  	<img :src="icon">
+  	</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
